@@ -15,3 +15,7 @@ If the database was already created, the data is not updated again as the script
 ## resample.py
 
 Due to the large usage.csv file and limited computational resources, resample.py script was used to downsize the provided data. This script produces usage_downsized.csv file which is randomly generated from usage.csv file and it is later used by populate.py script. 
+
+## How to use
+
+To run the scripts, first load the usage.csv file to the directory, first run resample.py by executing command 'python resample.py' (if data needs to be downsized). Then run 'python populate.py' script. If original usage.csv is used, change the csv file name in row 14 of populate.py file.
